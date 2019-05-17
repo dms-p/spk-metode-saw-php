@@ -1,0 +1,38 @@
+@import "core/color","core/reset","core/text","core/input","core/button","core/grid","core/table","core/alerts";
+@import "component/panel","component/header","component/nav","component/main";
+body#login{
+  background-color: #ECF0F1;
+  font-size: 11pt;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#panel-login{
+  width: 350px;
+  z-index: 2;
+}
+#hiasan{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  z-index: 1;
+}
+#logo-login{
+  margin-bottom: 30px;
+}
+#bg{
+  text-align:center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 0;
+}
+@media screen and (max-width:600px){
+  #hiasan{
+    display:none;
+  }
+}

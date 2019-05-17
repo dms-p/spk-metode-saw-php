@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Work Sans', sans-serif;
+	color: $dark;
+	font-weight: 500;
+	letter-spacing:normal;
+}
+@mixin displayflex{
+	display: flex;
+	justify-content: center;
+}

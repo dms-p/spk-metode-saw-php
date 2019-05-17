@@ -1,0 +1,32 @@
+$margin-grid:3%;
+.row{
+  margin-top: 10px;
+  display: flex;
+}
+div[class^="col-"]{
+  margin-left: $margin-grid;
+  &:first-child{
+    margin-left: 0%;
+  }
+}
+.col-1{width: (100%/12)-($margin-grid*11/12);}
+.col-2{width: (100%/6)-($margin-grid*10/12);}
+.col-3{width: (100%/4)-($margin-grid*9/12);}
+.col-4{width: (100%/3)-($margin-grid*8/12);}
+.col-5{width: (100%/2.4)-($margin-grid*7/12);}
+.col-6{width: (100%/2)-($margin-grid*6/12);}
+.col-7{width: (100%/1.714285714285714)-($margin-grid*5/12);}
+.col-8{width: (100%/1.5)-($margin-grid*4/12);}
+.col-9{width: (100%/1.333333333333333)-($margin-grid*3/12);}
+.col-10{width: (100%/1.2)-($margin-grid*2/12);}
+.col-11{width: (100%/1.09090909090909)-($margin-grid*1/12);}
+.col-12{width: 100%;}
+@media screen and (max-width: 600px){
+.row{
+  flex-direction: column;
+}
+  div[class^="col-"]{
+    width: 100%;
+    margin-right: 0;
+  }
+}

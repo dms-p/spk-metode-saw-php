@@ -1,0 +1,40 @@
+nav{
+  background-color: $green;
+  width: 100vw;
+  button#hidden{
+    display: none;
+  }
+}
+ul.nav{
+  width: 60vw;
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  li{
+    a{
+      font-size: 11pt;
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 6px 18px;
+      &:hover{
+        background-color: #13903e;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  nav{
+    button#hidden{
+      display: unset;
+      margin:0 auto!important;
+    }
+    ul.nav{
+      flex-direction: column;
+      text-align: center;
+      display: none;
+    }
+  }
+}

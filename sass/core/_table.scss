@@ -1,0 +1,28 @@
+.table-responsive{
+  overflow-y: hidden;
+}
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 5px 0px 15px 0px;
+  tr th{
+    //border-bottom: solid 2px #999999;
+    padding: 8px 0px;
+    border:solid 1px #e9ecef;
+    border-bottom:solid 2px #e4e7ea;
+    font-weight:bold;
+  }
+  td{
+    border: solid 1px #e9ecef;
+    padding: 5px;
+  }
+    tr#data{
+      &:hover{
+        background-color: #ececec;
+      }
+      &:nth-child(odd){
+        background-color: #f2f2f2;
+      }
+    }
+}

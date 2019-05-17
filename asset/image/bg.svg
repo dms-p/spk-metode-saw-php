@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="115.655mm" height="37.1545mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 11565 3715"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#999999;stroke-width:26.45;stroke-opacity:0.501961}
+    .fil1 {fill:none}
+    .fil3 {fill:none}
+    .fil2 {fill:gray;fill-opacity:0.200000}
+    .fil0 {fill:url(#id1)}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M0 18l11565 -18 0 3715 -11565 0 0 -3697z"/>
+   </clipPath>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="5782.73" y1="2246.35" x2="5782.73" y2="3656.33">
+   <stop offset="0" style="stop-opacity:1; stop-color:#E8E8E8"/>
+   <stop offset="0.701961" style="stop-opacity:1; stop-color:#F3F3F3"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FEFEFE"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <path class="fil0" d="M920 4529c9093,1217 12868,194 11324,-3069 -3395,-2281 -5303,3057 -10795,476 -722,-369 -1577,-369 -2298,0 -487,1778 102,2642 1769,2593z"/>
+   </g>
+  </g>
+  <polygon class="fil1" points="0,18 11565,0 11565,3715 0,3715 "/>
+  <path class="fil2" d="M10509 789c55,0 100,44 100,100 0,55 -45,100 -100,100 -56,0 -101,-45 -101,-100 0,-56 45,-100 101,-100z"/>
+  <path class="fil3 str0" d="M10509 838c28,0 50,23 50,51 0,28 -22,50 -50,50 -28,0 -51,-22 -51,-50 0,-28 23,-51 51,-51z"/>
+  <path class="fil2" d="M3593 2502c55,0 100,44 100,100 0,55 -45,100 -100,100 -56,0 -101,-45 -101,-100 0,-56 45,-100 101,-100z"/>
+  <path class="fil3 str0" d="M3593 2551c28,0 50,23 50,51 0,28 -22,50 -50,50 -28,0 -51,-22 -51,-50 0,-28 23,-51 51,-51z"/>
+  <path class="fil2" d="M648 1590c55,0 100,45 100,100 0,55 -45,100 -100,100 -55,0 -100,-45 -100,-100 0,-55 45,-100 100,-100z"/>
+  <path class="fil3 str0" d="M648 1639c28,0 51,23 51,51 0,28 -23,51 -51,51 -28,0 -51,-23 -51,-51 0,-28 23,-51 51,-51z"/>
+  <path class="fil2" d="M7553 1752c56,0 100,45 100,101 0,55 -44,100 -100,100 -55,0 -100,-45 -100,-100 0,-56 45,-101 100,-101z"/>
+  <path class="fil3 str0" d="M7553 1802c28,0 51,23 51,51 0,28 -23,50 -51,50 -28,0 -50,-22 -50,-50 0,-28 22,-51 50,-51z"/>
+ </g>
+</svg>

@@ -1,0 +1,32 @@
+@import "core/color","core/reset","core/text","core/input","core/button","core/grid","core/table","core/alerts";
+@import "component/panel","component/header","component/nav","component/main";
+
+body{
+  background-color: #ECF0F1;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-size: 11pt;
+}
+#animation{
+  -webkit-transition:all 1s ease-in-out;
+  -o-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
+}
+#judul{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 10px;
+  }
+  #judul-text{
+    color:$soft-grey;
+    h2{
+      margin:0!important;
+    }
+  }
+}

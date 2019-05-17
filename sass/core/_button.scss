@@ -1,0 +1,50 @@
+
+.btn{
+  border: none;
+  -webkit-padding: 7px 10px;
+  -o-padding: 7px 10px;
+  -moz-padding: 7px 10px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 10pt!important;
+  i{
+    color: white!important;
+  }
+}
+.btn-green{
+  background-color:$green;
+  color: white!important;
+  &:hover{
+    background-color: #1AB14B;
+  }
+}
+
+.btn-light-green{
+  background-color:$softgreen;
+  color: white!important;
+  &:hover{
+    background-color: #80CB4B;
+  }
+}
+
+.btn-yellow{
+  background-color:$yellow ;
+  color: white!important;
+  &:hover{
+    background-color: #C2DE31;
+  }
+}
+.btn-second{
+  background-color: transparent;
+  color: $green;
+  font-weight: 600;
+  &:hover{
+    color: #55bf17;
+  }
+}
+.btn-full{
+  width: 100%;
+}

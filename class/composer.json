@@ -1,0 +1,6 @@
+{
+    "require": {
+        "spipu/html2pdf": "^5.1",
+        "phpoffice/phpspreadsheet": "^1.3"
+    }
+}

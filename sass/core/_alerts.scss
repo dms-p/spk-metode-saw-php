@@ -1,0 +1,21 @@
+.alert{
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin:10px 0px;
+}
+.alert-red{
+  background-color: $softred;
+  border:solid 1px $darkred;
+  i,p{
+  color:#802029!important;
+  }
+}
+.alert-blue{
+  background-color: #d4edda;
+  border:solid 1px #c3e6cb;
+  color:#155724;
+}

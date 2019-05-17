@@ -1,0 +1,16 @@
+main{
+  position: relative;
+  @include displayflex;
+  #bg-green{
+      background-color: $green;
+      width: 100vw;
+      height: 30px;
+      z-index: 0;
+  }
+  #main-body{
+    width: 70vw;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+  }
+}

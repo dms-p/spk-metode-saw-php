@@ -1,0 +1,32 @@
+.panel{
+  background-color: white;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  overflow:hidden;
+}
+.panel-top-edit{
+  background-color: $softred;
+  box-shadow:inset 0px 0px 2px $darkred;
+  color:#802029;
+  b,i{
+    color:#802029;
+  }
+}
+.panel-top{
+  padding: 10px;
+  box-sizing: padding-box;
+  border-bottom: solid 1px #dddddd;
+}
+.panel-middle{
+  padding: 10px;
+  box-sizing: padding-box;
+}
+.panel-bottom{
+  padding: 10px;
+  border-bottom: solid 3px $darkgreen;
+  border-top: solid 1px #dddddd;
+}
