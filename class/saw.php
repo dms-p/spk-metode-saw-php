@@ -89,9 +89,11 @@ class saw {
     }
     //Kmencari kesimpulan
     public function getHasil(){
-    $queryHasil     =   "SELECT hasil.hasil AS hasil,jenis_barang.namaBarang,supplier.namaSupplier AS namaSupplier FROM hasil JOIN jenis_barang ON jenis_barang.id_jenisbarang=hasil.id_jenisbarang JOIN supplier ON supplier.id_supplier=hasil.id_supplier WHERE hasil.hasil=(SELECT MAX(hasil) FROM hasil WHERE id_jenisbarang='$this->idCookie')";
-    $execute        =   $this->getConnect()->query($queryHasil)->fetch_array(MYSQLI_ASSOC);
-    echo "<p>Jadi rekomendasi pemilihan supplier <i>$execute[namaBarang]</i> jatuh pada <i>$execute[namaSupplier]</i> dengan Nilai <b>".round($execute['hasil'],3)."</b></p>";
+        $queryHasil = "SELECT hasil.hasil AS hasil,jenis_barang.namaBarang,supplier.namaSupplier AS namaSupplier FROM hasil JOIN jenis_barang ON jenis_barang.id_jenisbarang=hasil.id_jenisbarang JOIN supplier ON supplier.id_supplier=hasil.id_supplier WHERE hasil.hasil=(SELECT MAX(hasil) FROM hasil WHERE id_jenisbarang='$this->idCookie')";
+        $execute = $this->getConnect()->query($queryHasil)->fetch_array(MYSQLI_ASSOC);
+        if($execute){
+            echo "<p>Jadi rekomendasi pemilihan supplier <i>$execute[namaBarang]</i> jatuh pada <i>$execute[namaSupplier]</i> dengan Nilai <b>".round($execute['hasil'],3)."</b></p>";
+        }
     }
 
 }

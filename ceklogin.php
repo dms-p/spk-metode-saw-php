@@ -4,11 +4,11 @@ $user=@$_POST['username'];
 $pass=@$_POST['password'];
 
 if (empty($user)){
-    $result="Username tidak boleh kosong";
+    $result="Username tidak boleh kosong!";
 }elseif (empty($pass)){
-    $result="Password Tidak boleh kosong";
+    $result="Password tidak boleh kosong!";
 }elseif (empty($username) && empty($pass)){
-    $ressult="Username dan password tidak boleh kosong";
+    $result="Username dan password tidak boleh kosong!";
 }else{
     $query="SELECT*FROM user WHERE username='$user'";
     $execute=$konek->query($query);
@@ -21,10 +21,10 @@ if (empty($user)){
             //header('location:./index.php');
             $result='success';
         }else{
-            $result="Username dan Password tidak cocok";
+            $result="Username dan password tidak cocok!";
         }
     }else{
-        $result="Username tidak terdaftar";
+        $result="Username tidak terdaftar!";
     }
 }
 echo json_encode($result);

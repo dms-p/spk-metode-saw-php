@@ -1,20 +1,30 @@
-<!-- judul -->
-<div class="panel">
-    <div class="panel-middle" id="judul">
-        <img src="asset/image/beranda.svg">
-        <div id="judul-text">
-            <h2 class="text-green">BERANDA</h2>
-            Halamanan Utama Administrator
-        </div>
+<!-- Page Title, Breadcrumb -->
+<div class="app-title">
+    <div>
+        <h1>Beranda</h1>
+    </div>
+    <div>
+        <ul class="app-breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><i class="fa fa-home"></i></li>
+            <li class="breadcrumb-item"><a href="./?page=beranda">Beranda</a></li>
+        </ul>
     </div>
 </div>
-<!-- judul -->
-<div class="panel">
-    <div class="panel-middle text-center">
-        <h1>
-            Selamat Datang, <span class="text-green">Administrator</span><br>
-            di Sistem Pendukung Keputusan pemilihan supplier berbasis web menggunakan metode <span class="text-green">Simple Additive Weighting</span>
-        </h1>
+
+<!-- Content -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                <div class="media">
+                    <img class="align-self-center mr-3" src="asset/image/illustration/undraw_skateboard_d6or.svg" width="175" alt="Welcome">
+                    <div class="media-body">
+                        <h5 class="mt-0">Hai, <?= ucfirst($_SESSION['user']) ?>!</h5>
+                        <p>Selamat Datang di Sistem Pendukung Keputusan pemilihan supplier berbasis web menggunakan metode <span class="text-dark font-weight-bold">Simple Additive Weighting</span>.</p>
+                        <p class="mb-0"><a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fa fa-book mr-2"></i>Unduh Panduan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="panel-bottom"></div>
 </div>

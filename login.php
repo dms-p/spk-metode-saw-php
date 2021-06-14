@@ -1,31 +1,43 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>::Login Page::</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="asset/css/login.css">
-    <link rel="stylesheet" type="text/css" href="asset/plugin/font-icon/css/fontawesome-all.min.css">
+    <?php include "_head.php"; ?>
+    <?php include "_style.php"; ?>
 </head>
-<body id="login">
-<img src="asset/image/logo.svg" id="logo-login">
-<div class="alert alert-red text-center" style="display:none;" id="alert"><i class="fa fa-info-circle fa-lg"></i><p id="value">sdasdasd</p></div>
-<div id="panel-login">
-    <form id="formlogin" method="POST" action="ceklogin.php">
-        <div class="group-input">
-            <label for="username">Username :</label>
-            <input type="text" class="form-custom" required autocomplete="off" placeholder="Username" id="username" name="username" >
+<body>
+    <section class="material-half-bg">
+        <div class="cover"></div>
+    </section>
+    <section class="login-content">
+        <div class="logo">
+            <h1>YNTKTS</h1>
         </div>
-        <div class="group-input">
-            <label for="password">Password :</label>
-            <input type="password" class="form-custom" required autocomplete="off" placeholder="Password" id="password" name="password" >
+        <div class="login-box p-4">
+            <form id="form-login" method="POST" action="ceklogin.php">
+                <h3 class="login-head">Selamat Datang!</h3>
+                <div class="alert alert-danger text-center" style="display:none;" id="alert">
+                    <i class="fa fa-exclamation-triangle fa-lg"></i><p class="mb-0" id="alert-message"></p>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Username</label>
+                    <input class="form-control" name="username" type="text" placeholder="Username" autofocus>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <div class="input-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password">
+                        <div class="input-group-append">
+                            <a href="#" class="input-group-text text-dark btn btn-toggle-password"><i class="fa fa-eye mr-0"></i></a>
+                        </div>
+                    </div>
+                    <!-- <input class="form-control" name="password" type="password" placeholder="Password"> -->
+                </div>
+                <div class="form-group btn-container">
+                    <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>Masuk</button>
+                </div>
+            </form>
         </div>
-        <button class="btn btn-green btn-full"><i class="fa fa-arrow-alt-circle-right text-white"></i> Login</button>
-    </form>
-</div>
-<p>&copy dimas aldi</p>
-<img src="asset/image/top-image.svg" id="hiasan"><br>
+    </section>
+    <?php include "_js.php"; ?>
 </body>
-<script src="asset/js/jquery.js" type="text/javascript"></script>
-<script src="asset/js/main.js" type="text/javascript"></script>
 </html>

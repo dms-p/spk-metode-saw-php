@@ -26,12 +26,12 @@ switch ($op){
         $crud->update($query,$konek,'./?page=supplier');
         break;
     case 'kriteria':
-        $cek="SELECT namaKriteria FROM kriteria WHERE namaKriteria='$kriteria'";
+        $cek="SELECT namaKriteria FROM kriteria WHERE namaKriteria='$kriteria' AND id_kriteria!='$id'";
         $query="UPDATE kriteria SET namaKriteria='$kriteria',sifat='$sifat' WHERE id_kriteria='$id';";
         $crud->multiUpdate($cek,$query,$konek,'./?page=kriteria');
         break;
     case 'subkriteria':
-        $cek="SELECT id_nilaikriteria FROM nilai_kriteria WHERE (id_kriteria='$kriteria' AND nilai ='$nilai') OR (id_kriteria='$kriteria' AND keterangan = '$keterangan')";
+        $cek="SELECT id_nilaikriteria FROM nilai_kriteria WHERE ((id_kriteria='$kriteria' AND nilai ='$nilai') OR (id_kriteria='$kriteria' AND keterangan = '$keterangan')) AND id_nilaikriteria!='$id'";
         $query="UPDATE nilai_kriteria SET id_kriteria='$kriteria',nilai='$nilai',keterangan='$keterangan' WHERE id_nilaikriteria='$id'";
         $crud->multiUpdate($cek,$query,$konek,'./?page=subkriteria');
         break;

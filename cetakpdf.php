@@ -62,6 +62,6 @@ table {
 $content=ob_get_clean();
 require __DIR__.'/class/vendor/autoload.php';
 use Spipu\Html2Pdf\Html2Pdf;
-$pdf=new Html2Pdf();
+$pdf=new Html2Pdf('L');
 $pdf->writeHTML($content);
 $pdf->output();
