@@ -47,7 +47,7 @@ switch ($op){
         $crud->multiAddData($cek,$query,$konek);
     break;
     case 'nilai'://tambah data nilai
-        $cek="SELECT id_supplier FROM nilai_supplier WHERE id_supplier='$supplier'";
+        $cek="SELECT id_supplier, id_jenisbarang FROM nilai_supplier WHERE id_supplier='$supplier' AND id_jenisbarang='$barang'";
         $query=null;
         for ($i=0;$i<count($nilai);$i++){
             $query.="INSERT INTO nilai_supplier (id_supplier,id_jenisbarang,id_kriteria,id_nilaikriteria) VALUES ('$supplier','$barang','$kriteria[$i]','$nilai[$i]');";

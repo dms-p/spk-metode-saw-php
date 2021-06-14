@@ -3,9 +3,13 @@ require '../connect.php';
 require '../class/crud.php';
 if ($_SERVER['REQUEST_METHOD']=='GET') {
     $id=@$_GET['id'];
+    $a=@$_POST['a'];
+    $b=@$_POST['b'];
     $op=@$_GET['op'];
 }else if ($_SERVER['REQUEST_METHOD']=='POST'){
     $id=@$_POST['id'];
+    $a=@$_POST['a'];
+    $b=@$_POST['b'];
     $op=@$_POST['op'];
 }
 $crud=new crud();
@@ -31,7 +35,7 @@ switch ($op){
         $crud->delete($query,$konek);
         break;
     case 'nilai':
-        $query="DELETE FROM nilai_supplier WHERE id_supplier='$id'";
+        $query="DELETE FROM nilai_supplier WHERE id_supplier='$a' AND id_jenisbarang='$b'";
         $crud->delete($query,$konek);
         break;
 }
